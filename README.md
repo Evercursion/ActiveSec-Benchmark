@@ -6,6 +6,12 @@
 - **License:** [MIT License](LICENSE) (`Copyright (c) 2026 Evercursion - GaiaLogic Unipessoal Lda.`)
 - **Primary Outputs:** Open security specification ([`docs/`](docs/)), 252-case Living-off-the-Land & 24-trajectory benchmark telemetry ([`results/lotlimmune_benchmark.json`](results/lotlimmune_benchmark.json)), live component security ledger ([`wiki/SECURITY_LEDGER.md`](wiki/SECURITY_LEDGER.md)), and adaptive plain-language security lessons ([`wiki_user/`](wiki_user/)).
 
+### The Confused Deputy Problem (1-Minute Video)
+
+[![In this video, a confused deputy is doing exactly what he is told, just like your coding agent might.](https://img.youtube.com/vi/qWXIgrnv_4g/hqdefault.jpg)](https://youtube.com/shorts/qWXIgrnv_4g?is=axd7YTQ9V2Z1Sg5G)
+
+> *"In this video, a confused deputy is doing exactly what he is told, just like your coding agent might."* — **[Watch the Short on YouTube](https://youtube.com/shorts/qWXIgrnv_4g?is=axd7YTQ9V2Z1Sg5G)**
+
 ---
 
 ## 1. Why Small Local Coding Models Need a Different Security Architecture
