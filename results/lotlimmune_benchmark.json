@@ -16,7 +16,7 @@
     "live_calls": 0
   },
   "notes": {
-    "live_llm_judge": "Live Ollama judge (qwen3:4b) with on-disk cache at /home/simon/Cursor/ActiveSecHarness/results/.llm_judge_cache.json. Tiny prompts (BLOCK/ALLOW). Per-case fallback on transport/parse failure.",
+    "live_llm_judge": "Live Ollama judge (qwen3:4b) with on-disk cache at results/.llm_judge_cache.json. Tiny prompts (BLOCK/ALLOW). Per-case fallback on transport/parse failure.",
     "activesec_ring0": "Decisions never read the fixture's kind or tags. Real NetworkGuard, CredentialGuard, MalwareGuard, CommandDeobfuscator, SandboxGuard argument validation, WorkspaceProvenanceLedger (for fixtures declared context_tainted) and SecurityKernel.execute_tool_call (file reads). Thin adapters only where the fixture has no archive bytes (zip-bomb and polyglot markers, reported as ArchiveFixtureAdapter). Shell commands are validated and decided, never executed.",
     "hybrid_llm_plus_ring0": "Neurosymbolic hybrid: Ring-0 is authoritative. Live LLM is consulted for advisory signal on every case but cannot override a Ring-0 allow (avoids small-judge FPR inflation).",
     "fixture_scale": "E1: 120 attack + 120 benign + 12 kill-chain scenarios.",
@@ -4826,7 +4826,7 @@
       "regime": "regex",
       "blocked": false,
       "latency_ms": 0.0092,
-      "reason": "regex_miss:unicode_bidi",
+      "reason": "regex_allow",
       "correct": false
     },
     {
@@ -4837,7 +4837,7 @@
       "regime": "regex",
       "blocked": false,
       "latency_ms": 0.0062,
-      "reason": "regex_miss:unicode_bidi",
+      "reason": "regex_allow",
       "correct": false
     },
     {
@@ -4870,7 +4870,7 @@
       "regime": "regex",
       "blocked": false,
       "latency_ms": 0.0107,
-      "reason": "regex_allow",
+      "reason": "regex_miss:zip_bomb_structure",
       "correct": false
     },
     {
@@ -5134,7 +5134,7 @@
       "regime": "regex",
       "blocked": false,
       "latency_ms": 0.0061,
-      "reason": "regex_miss:password_policy",
+      "reason": "regex_allow",
       "correct": false
     },
     {
@@ -5145,7 +5145,7 @@
       "regime": "regex",
       "blocked": false,
       "latency_ms": 0.0059,
-      "reason": "regex_miss:password_policy",
+      "reason": "regex_allow",
       "correct": false
     },
     {
@@ -5156,7 +5156,7 @@
       "regime": "regex",
       "blocked": false,
       "latency_ms": 0.0055,
-      "reason": "regex_miss:password_policy",
+      "reason": "regex_allow",
       "correct": false
     },
     {
@@ -5167,7 +5167,7 @@
       "regime": "regex",
       "blocked": false,
       "latency_ms": 0.0055,
-      "reason": "regex_miss:password_policy",
+      "reason": "regex_allow",
       "correct": false
     },
     {
@@ -5178,7 +5178,7 @@
       "regime": "regex",
       "blocked": false,
       "latency_ms": 0.0053,
-      "reason": "regex_miss:password_policy",
+      "reason": "regex_allow",
       "correct": false
     },
     {
@@ -5189,7 +5189,7 @@
       "regime": "regex",
       "blocked": false,
       "latency_ms": 0.0052,
-      "reason": "regex_miss:password_policy",
+      "reason": "regex_allow",
       "correct": false
     },
     {
@@ -5200,7 +5200,7 @@
       "regime": "regex",
       "blocked": false,
       "latency_ms": 0.0054,
-      "reason": "regex_miss:password_policy",
+      "reason": "regex_allow",
       "correct": false
     },
     {
@@ -5211,7 +5211,7 @@
       "regime": "regex",
       "blocked": false,
       "latency_ms": 0.0056,
-      "reason": "regex_miss:password_policy",
+      "reason": "regex_allow",
       "correct": false
     },
     {
@@ -5222,7 +5222,7 @@
       "regime": "regex",
       "blocked": false,
       "latency_ms": 0.0054,
-      "reason": "regex_miss:password_policy",
+      "reason": "regex_allow",
       "correct": false
     },
     {
@@ -5233,7 +5233,7 @@
       "regime": "regex",
       "blocked": false,
       "latency_ms": 0.0054,
-      "reason": "regex_miss:password_policy",
+      "reason": "regex_allow",
       "correct": false
     },
     {
@@ -5244,7 +5244,7 @@
       "regime": "regex",
       "blocked": false,
       "latency_ms": 0.0053,
-      "reason": "regex_miss:password_policy",
+      "reason": "regex_allow",
       "correct": false
     },
     {
@@ -5255,7 +5255,7 @@
       "regime": "regex",
       "blocked": false,
       "latency_ms": 0.0055,
-      "reason": "regex_miss:password_policy",
+      "reason": "regex_allow",
       "correct": false
     },
     {
@@ -5266,7 +5266,7 @@
       "regime": "regex",
       "blocked": false,
       "latency_ms": 0.0053,
-      "reason": "regex_miss:password_policy",
+      "reason": "regex_allow",
       "correct": false
     },
     {
@@ -5277,7 +5277,7 @@
       "regime": "regex",
       "blocked": false,
       "latency_ms": 0.0055,
-      "reason": "regex_miss:password_policy",
+      "reason": "regex_allow",
       "correct": false
     },
     {
@@ -5288,7 +5288,7 @@
       "regime": "regex",
       "blocked": false,
       "latency_ms": 0.0054,
-      "reason": "regex_miss:password_policy",
+      "reason": "regex_allow",
       "correct": false
     },
     {
