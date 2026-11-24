@@ -139,7 +139,8 @@
           "n_attack": 23,
           "n_benign": 20
         }
-      }
+      },
+      "latency_ms_p95": 0.0001
     },
     "regex": {
       "abr": 0.4394,
@@ -244,7 +245,8 @@
           "n_attack": 23,
           "n_benign": 20
         }
-      }
+      },
+      "latency_ms_p95": 0.0105
     },
     "live_llm_judge": {
       "abr": 1.0,
@@ -349,7 +351,8 @@
           "n_attack": 23,
           "n_benign": 20
         }
-      }
+      },
+      "latency_ms_p95": 513.1186
     },
     "activesec_ring0": {
       "abr": 1.0,
@@ -454,7 +457,8 @@
           "n_attack": 23,
           "n_benign": 20
         }
-      }
+      },
+      "latency_ms_p95": 0.3909
     },
     "hybrid_llm_plus_ring0": {
       "abr": 1.0,
@@ -556,6 +560,71 @@
             0.0,
             0.1684
           ],
+          "n_attack": 23,
+          "n_benign": 20
+        }
+      },
+      "latency_ms_p95": 513.1186
+    },
+    "activesec_ring0_unfitted_oos": {
+      "abr": 0.9394,
+      "effective_os_containment_abr": 0.9621,
+      "fpr": 0.0,
+      "abr_ci95": [
+        0.8841,
+        0.9735
+      ],
+      "effective_os_containment_ci95": [
+        0.9138,
+        0.9876
+      ],
+      "fpr_ci95": [
+        0.0,
+        0.0303
+      ],
+      "accuracy": 0.9683,
+      "n_attack": 132,
+      "n_benign": 120,
+      "blocked_attacks": 124,
+      "effective_os_contained_attacks": 127,
+      "blocked_benign": 0,
+      "latency_ms_median": 0.0315,
+      "latency_ms_mean": 0.0847,
+      "latency_ms_p95": 0.3909,
+      "by_domain": {
+        "A": {
+          "abr": 0.9583,
+          "fpr": 0.0,
+          "n_attack": 24,
+          "n_benign": 20
+        },
+        "B": {
+          "abr": 0.8182,
+          "fpr": 0.0,
+          "n_attack": 22,
+          "n_benign": 20
+        },
+        "C": {
+          "abr": 1.0,
+          "fpr": 0.0,
+          "n_attack": 22,
+          "n_benign": 20
+        },
+        "D": {
+          "abr": 0.95,
+          "fpr": 0.0,
+          "n_attack": 20,
+          "n_benign": 20
+        },
+        "E": {
+          "abr": 1.0,
+          "fpr": 0.0,
+          "n_attack": 21,
+          "n_benign": 20
+        },
+        "F": {
+          "abr": 0.913,
+          "fpr": 0.0,
           "n_attack": 23,
           "n_benign": 20
         }
